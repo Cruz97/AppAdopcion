@@ -1,0 +1,34 @@
+[
+    {
+        "icon": "home",
+        "name": "Inicio",
+        "redirectTo": "inicio"
+       },
+    {
+     "icon": "contacts",
+     "name": "Fundaciones",
+     "redirectTo": "user/fundaciones"
+    },
+    {
+        "icon": "paw",
+        "name": "Mascotas",
+        "redirectTo": "user/mascotas"
+    },
+    {
+        "icon": "paper",
+        "name": "Solicitudes",
+        "redirectTo": "user/solicitudes"
+    },
+    {
+        "icon": "logo-usd",
+        "name": "Donaciones",
+        "redirectTo": "user/donaciones"
+    },
+    {
+        "icon": "information-circle",
+        "name": "Acerca de",
+        "redirectTo": "acerca"
+    }
+
+ 
+]

@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InicioPageRoutingModule } from './inicio-routing.module';
+import { MascotasPageRoutingModule } from './mascotas-routing.module';
 
-import { InicioPage } from './inicio.page';
-import { ComponentsModule } from '../../components/components.module';
+import { MascotasPage } from './mascotas.page';
+import { ComponentsModule } from '../../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule,
+    MascotasPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [InicioPage]
+  declarations: [MascotasPage]
 })
-export class InicioPageModule {}
+export class MascotasPageModule {}

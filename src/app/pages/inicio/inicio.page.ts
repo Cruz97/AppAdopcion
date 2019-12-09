@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Componente } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-inicio',
@@ -7,28 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-  components: Componente[] = [
-   {
-    icon: 'american-football',
-    name: 'Alert',
-    redirectTo: '/alert'
-   },
-   {
-    icon: 'appstore',
-    name: 'Action Sheet',
-    redirectTo: '/action-sheet'
-   }
+  components: Componente[] = [];
+  //  {
+  //   icon: 'american-football',
+  //   name: 'Alert',
+  //   redirectTo: '/alert'
+  //  },
+  //  {
+  //   icon: 'appstore',
+  //   name: 'Action Sheet',
+  //   redirectTo: '/action-sheet'
+  //  }
 
-  ];
-  constructor() { }
+  // ];
+  constructor(private menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
 
-}
+  toggleMenu(){
+    this.menuCtrl.toggle();
+  }
 
-interface Componente{
-  icon: string;
-  name: string;
-  redirectTo: string;
 }

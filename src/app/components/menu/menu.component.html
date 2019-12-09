@@ -1,0 +1,33 @@
+
+<ion-menu side="start" 
+menu-id="mymenu"
+contentId="main">
+<div class="logo-section">
+    <div class="logo-section__wrapper">
+      <img class="logo-section__logo" src="assets/img/img_menu.jpeg" />
+      <!-- <h3 class="logo-section__title">Adopcion de</h3> -->
+    </div>
+</div>
+  <!-- <ion-header>
+    <ion-toolbar color="primary">
+    <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+<ion-content>
+<ion-list>
+  <ion-menu-toggle *ngFor="let item of components  | async">
+    <ion-item 
+    
+    [routerLink]="item.redirectTo" detail>
+        <ion-icon 
+        slot="start"
+        [name]="item.icon"></ion-icon>
+        <ion-label>
+            {{item.name}}
+          </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+
+</ion-list>
+</ion-content>
+</ion-menu>

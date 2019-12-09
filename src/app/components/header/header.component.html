@@ -1,11 +1,19 @@
 <ion-header no-border>
-  <ion-toolbar>
-    <ion-buttons slot="start">
+  <ion-toolbar >
+      <ion-buttons slot="start">
+          <!-- <ion-button (click)="toggleMenu()" slot="start">
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button> -->
+          <ion-menu-button color="primary"
+                            menu="mymenu"
+                           ></ion-menu-button>
+        </ion-buttons>
+    <!-- <ion-buttons slot="start">
       <ion-back-button defaultHref="/">
         
       </ion-back-button>
 
-    </ion-buttons>
-    <ion-title text-capitalize>{{titulo}}</ion-title>
+    </ion-buttons> -->
+    <ion-title  text-capitalize>{{titulo}}</ion-title>
   </ion-toolbar>
 </ion-header>
